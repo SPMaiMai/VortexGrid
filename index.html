@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VortexGrid | Built For Gamers. Tuned For Speed.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Landing Page Specific Styling */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: var(--accent-color);
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .features {
+            padding: 100px 8%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">VORTEX<span>GRID</span></div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="downloads/index.html">Download</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>VORTEX<span>GRID</span></h1>
+        <p>BUILT FOR GAMERS. TUNED FOR SPEED.</p>
+        <div class="cta-group">
+            <a href="downloads/index.html" class="btn btn-filled">Download Now</a>
+            <a href="#features" class="btn">Explore Features</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>⚡ Performance First</h3>
+            <p>Engineered to minimize background engine overhead. Free up your core hardware for maximum frame rates in-game.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🌐 Custom Grid UI</h3>
+            <p>A beautiful, fully customizable command center interface designed to keep your setups matching and slick.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📊 Live Stat Monitors</h3>
+            <p>Track your system vitals directly from your application frame without needing secondary heavy overlays.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 VortexGrid. All rights reserved. Built for speed.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
